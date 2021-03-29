@@ -1,8 +1,7 @@
 const express = require('express')
+const doHit = require('../controller')
 const router = express.Router()
 
-router.get("/", (req,res)=>{
-    res.send("Hi! You GOT me.")
-})
+router.get("/", doHit)
 
 module.exports = router
